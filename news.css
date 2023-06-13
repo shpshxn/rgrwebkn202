@@ -1,0 +1,255 @@
+body{
+    padding: 0;
+    margin: 0;
+    font-family: inter;
+}
+
+a {
+  text-decoration: none;
+}
+
+/* ====================== MENU ======================= */
+#navbar {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  vertical-align: middle;
+  overflow: hidden;
+  background-color: #333;
+  z-index: 1;
+  width: 1400px;
+  position: fixed;
+
+}
+#navbar a {
+  font-size: larger;
+  margin-top: 20px;
+  margin-left: 10px;
+  margin-right: 10px;
+  float: left;
+  display: block;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px;
+  height: 80px;
+  text-decoration: none;
+  transition: all 0.5s;
+}
+#navbar a:hover {
+  color: #ff9292; 
+}
+
+  /* ====================== NEWS ======================= */
+  #news {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 40px;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.5);
+  }
+
+  .news-heading {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
+
+  .news-heading h3 {
+    font-size: 2.4em;
+    color: #2b2b2b;
+    font-weight: 600px;
+  }
+
+  .news-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 20px 0px;
+    flex-wrap: wrap;
+  }
+
+  .news-box{
+    width: 350px;
+    background-color: #ffffff;
+    border: 2px solid #ececec;
+    margin: 20px;
+    border-radius: 10px;
+    transition: all 0.3s;
+  }
+  .news-box:hover{
+    width: 350px;
+    scale: 1.05;
+    background-color: #ffffff;
+    border: 2px solid #ececec;
+    margin: 20px;
+    border-radius: 10px;
+    z-index: 0;
+  }
+
+  .news-image {
+    width: 100%;
+    height: auto;
+  }
+
+  .news-image img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+  }
+
+  .news-text{
+    padding: 30px;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .news-text span{
+    color: #f33f3c;
+    font-size: 0.9rem;
+  }
+
+  .news-text .news-title{
+    font-size: 2.2rem;
+    font-weight: 500;
+    color: #272727;
+    text-decoration: none;
+  }
+
+  .news-text .news-title:hover{
+    color: #f33f3c;
+    transition: all ease 0.3s;
+  }
+
+  .news-text p{
+    color: #9b9b9b;
+    font-size: 0.9rem;
+    display: -webkit-box;
+    -webkit-line-clamp: 3;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    margin: 20px 0;
+  }
+
+  .news-text a{
+    color: #272727;
+    text-decoration: none;
+  }
+
+  .news-text a:hover{
+    color: #c86565;
+  }
+  /* =================================================== */
+
+  /* ================= NEWS TEMPLATES ================== */
+  .news-templates h2 {
+    color: #f33f3c;
+    /* text-align: center; */
+    margin-left: 40px;
+    font-size: 2em;
+  }
+
+  .news-templates img{
+    display: block;
+    margin: 30px auto;
+    height: 400px;
+    width: auto;
+  }
+
+  .news-templates p{
+    margin: 0px 40px;
+    font-size: 22px;
+  }
+  /* =================================================== */
+  /* ==================== FOOTER ======================= */
+  *{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+
+  .container {
+    max-width: 1270px;
+    margin: auto;
+  }
+
+  .row {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .footer-ul {
+    list-style: none;
+  }
+
+  .footer {
+    background-color: #292929;
+    padding: 70px 0;
+  }
+
+  .footer-col {
+    width: 33%;
+    padding: 0 15px;
+  }
+
+  .footer-col h4 {
+    font-size: 18px;
+    color: #ffffff;
+    text-transform: capitalize;
+    margin-bottom: 35px;
+    font-weight: 500;
+    position: relative;
+  }
+
+  .footer-col h4::before {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: -10px;
+    background-color: #e91e63;
+    height: 2px;
+    box-sizing: border-box;
+    width: 70px;
+  }
+
+  .footer-col ul li:not(:last-child) {
+    margin-bottom: 10px;
+  }
+
+  .footer-col ul li a {
+    font-size: 16px;
+    text-transform: capitalize;
+    text-decoration: none;
+    font-weight: 300;
+    color: #bbbbbb;
+    display: block;
+    transition: all 0.3 ease;
+  }
+
+  .footer-col ul li a:hover {
+    color: #ffffff;;
+    padding-left: 8px;
+    transition: all 0.5s ease;
+  }
+
+  .footer-col .social-links a{
+    display: inline-block;
+    height: 40px;
+    width: 40px;
+    background-color: rgba(255, 255, 255, 0.2);
+    margin: 0 10px 10px 0;
+    text-align: center;
+    line-height: 40px;
+    border-radius: 50%;
+    color: #ffffff;
+  }
+
+  .footer-col .social-links a:hover {
+    color: #3360ff;
+    transform: scale(1.2);
+    transition: all 0.3s ease;
+  }
+  /* =================================================== */

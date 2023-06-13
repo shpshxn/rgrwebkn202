@@ -1,0 +1,341 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>The Generics | Store</title>
+        <meta name="description" content="This is the description">
+        <link rel="stylesheet" href="store.css" />
+        <script src="store.js" async></script>
+    </head>
+    <body>
+        
+        <div id="navbar">
+            <a href="index.html">Головна сторінка</a>
+            <a href="store.html">Меню</a>
+            <a href="news.html">Новини</a>
+            <a href="contacts.html">Контакти</a>
+          </div>
+        <div id="flexcont">
+
+        <div id="sidebar">
+            <div id="cartbar">
+            <h3 class="carttitle">Корзина</h3>
+            <div id="cart">
+                    <div class="cart-items">
+                    </div>
+                    <div class="cart-total">
+                        <strong class="cart-total-title">Всього:</strong>
+                        <span class="cart-total-price">0 грн</span>
+                    </div>
+                    <button data-modal-target="#modal" class="btn btn-primary btn-purchase" type="button">Оформити замовлення</button>
+            </div>
+            </div>
+        </div>
+        <div class="modal" id="modal">
+            <div class="modal-header">
+                <div class="title">Оформлення</div>
+                <button data-close-button class="close-button">&times;</button>
+            </div>
+            <div class="modal-body">
+                <form action="">
+                <p class="inplabel">Введіть свої данні для оформлення замовлення</p>
+                <label for="surname" class="inplabel">Контактне ім'я:</label>
+                <input class="inputdata">
+                <br>
+                <br>
+                <label for="email" class="inplabel">E-mail адреса:</label>
+                <input class="inputdata">
+                <br>
+                <br>
+                <label for="phone" class="inplabel">Номер телефону:</label>
+                <input class="inputdata">
+                <br>
+                <br>
+                <label for="address" class="inplabel">Адрес доставки:</label>
+                <input class="inputdata">
+                <br>
+                <br>
+                <label for="address" class="inplabel">Коментар:</label>
+                <input class="inputdata">
+                <br>
+                <button class="btn btn-primary btn-purchase" type="button">Оформити замовлення</button>
+                </form>
+            </div>
+        </div>
+        <div id="overlay"></div>
+        <div id="pizzamenu">
+        <section class="container content-section">
+            <table align="center">
+                <tr>
+                    <th>
+                        <div class="shop-items">
+                            <div class="shop-item">
+                                
+                                <img class="shop-item-image" src="https://smaki-maki.com/wp-content/uploads/sites/4/2020/05/dyavola-1.jpg">
+                                <span class="shop-item-title">Дьявола</span>
+                                <p class ="ingreds">Соус чилі, моцарела, пепероні, перець чилі</p>
+                                <div class="shop-item-details">
+                                    <span class="shop-item-price">237 грн</span>
+                                    <button class="btn btn-primary shop-item-button" type="button" id="buttocart">В КОРЗИНУ</button>
+                                    <p class="weight">470 гр</p>
+                                </div>
+                                <div class="dets">
+                                <div class="buttons">
+                                <div class="dough">
+                                <button class="doughtype" type="button">ПУХКЕ</button>
+                                <button class="doughtype" type="button">ТОНКЕ</button>
+                                </div>
+                                <div class="tocart">    
+                                </div>
+                                </div>
+                                <p class="doughp">тісто</p>
+                                </div>
+                            </div>
+                        </div>
+                    </th>
+                    <th>
+                        <div class="shop-items">
+                            <div class="shop-item">
+                                <img class="shop-item-image" src="https://smaki-maki.com/wp-content/uploads/sites/4/2020/05/margaryta.jpg">
+                                <span class="shop-item-title">Маргарита</span>
+                                <p class ="ingreds">Томатний соус, моцарела, помідори, базилік</p>
+                                <div class="shop-item-details">
+                                <span class="shop-item-price">170 грн</span>
+                                    <button class="btn btn-primary shop-item-button" type="button" id="buttocart">В КОРЗИНУ</button>
+                                    <p class="weight">420 гр</p>
+                                </div>
+                                <div class="dets">
+                                <div class="buttons">
+                                <div class="dough">
+                                <button class="doughtype" type="button">ПУХКЕ</button>
+                                <button class="doughtype" type="button">ТОНКЕ</button>
+                                </div>
+                                <div class="tocart">    
+                                </div>
+                                </div>
+                                <p class="doughp">тісто</p>
+                                </div>
+                            </div>
+                        </div>
+                    </th>
+                    <th>
+                        <div class="shop-items">
+                            <div class="shop-item">
+                                <img class="shop-item-image" src="https://smaki-maki.com/wp-content/uploads/sites/4/2021/10/salyami.jpg">
+                                <span class="shop-item-title">Салямі</span>
+                                <p class ="ingreds">Томатний соус, моцарела, <br>ковбаса салямі</p>
+                                <div class="shop-item-details">
+                                <span class="shop-item-price">180 грн</span>
+                                    <button class="btn btn-primary shop-item-button" type="button" id="buttocart">В КОРЗИНУ</button>
+                                    <p class="weight">440 гр</p>
+                                </div>
+                                <div class="dets">
+                                <div class="buttons">
+                                <div class="dough">
+                                <button class="doughtype" type="button">ПУХКЕ</button>
+                                <button class="doughtype" type="button">ТОНКЕ</button>
+                                </div>
+                                <div class="tocart">    
+                                </div>
+                                </div>
+                                <p class="doughp">тісто</p>
+                                </div>
+                            </div>
+                        </div>
+                    </th>
+                </tr>
+                <tr align="center">
+                    <th>
+                        <div class="shop-items">
+                            <div class="shop-item">
+                                <img class="shop-item-image" src="https://smaki-maki.com/wp-content/uploads/sites/4/2020/07/napoli-1.jpg">
+                                <span class="shop-item-title">Наполі</span>
+                                <p class ="ingreds">Вершковий соус, руккула, моцарела, фета, томати, салямі</p>
+                                <div class="shop-item-details">
+                                <span class="shop-item-price">274 грн</span>
+                                    <button class="btn btn-primary shop-item-button" type="button" id="buttocart">В КОРЗИНУ</button>
+                                    <p class="weight">460 гр</p>
+                                </div>
+                                <div class="dets">
+                                <div class="buttons">
+                                <div class="dough">
+                                <button class="doughtype" type="button">ПУХКЕ</button>
+                                <button class="doughtype" type="button">ТОНКЕ</button>
+                                </div>
+                                <div class="tocart">    
+                                </div>
+                                </div>
+                                <p class="doughp">тісто</p>
+                                </div>
+                            </div>
+                        </div>
+                    </th>
+                    <th>
+                        <div class="shop-items">
+                            <div class="shop-item">
+                                <img class="shop-item-image" src="https://smaki-maki.com/wp-content/uploads/sites/4/2020/05/4-syry-1.jpg">
+                                <span class="shop-item-title">4 сири</span>
+                                <p class ="ingreds">Вершковий соус, моцарела, чедер, пармезан, фета</p>
+                                <div class="shop-item-details">
+                                <span class="shop-item-price">237 грн</span>
+                                    <button class="btn btn-primary shop-item-button" type="button" id="buttocart">В КОРЗИНУ</button>
+                                    <p class="weight">480 гр</p>
+                                </div>
+                                <div class="dets">
+                                <div class="buttons">
+                                <div class="dough">
+                                <button class="doughtype" type="button">ПУХКЕ</button>
+                                <button class="doughtype" type="button">ТОНКЕ</button>
+                                </div>
+                                <div class="tocart">    
+                                </div>
+                                </div>
+                                <p class="doughp">тісто</p>
+                                </div>
+                            </div>
+                        </div>
+                    </th>
+                    <th>
+                        <div class="shop-items">
+                            <div class="shop-item">
+                                <img class="shop-item-image" src="https://smaki-maki.com/wp-content/uploads/sites/4/2020/05/gavajska-1.jpg">
+                                <span class="shop-item-title">Гавайська</span>
+                                <p class ="ingreds">Соус томатний, шинка, куряче філе, кукурудза, ананаси</p>
+                                <div class="shop-item-details">
+                                <span class="shop-item-price">241 грн</span>
+                                    <button class="btn btn-primary shop-item-button" type="button" id="buttocart">В КОРЗИНУ</button>
+                                    <p class="weight">490 гр</p>
+                                </div>
+                                <div class="dets">
+                                <div class="buttons">
+                                <div class="dough">
+                                <button class="doughtype" type="button">ПУХКЕ</button>
+                                <button class="doughtype" type="button">ТОНКЕ</button>
+                                </div>
+                                <div class="tocart">    
+                                </div>
+                                </div>
+                                <p class="doughp">тісто</p>
+                                </div>
+                            </div>
+                        </div>
+                    </th>
+                </tr>
+                <tr align="center">
+                    <th>
+                        <div class="shop-items">
+                            <div class="shop-item">
+                                <img class="shop-item-image" src="https://smaki-maki.com/wp-content/uploads/sites/4/2020/05/czezara-1.jpg">
+                                <span class="shop-item-title">Цезара</span>
+                                <p class ="ingreds">Соус вершковий, пармезан, помідори, листя салату, прошуто</p>
+                                <div class="shop-item-details">
+                                <span class="shop-item-price">256 грн</span>
+                                    <button class="btn btn-primary shop-item-button" type="button" id="buttocart">В КОРЗИНУ</button>
+                                    <p class="weight">470 гр</p>
+                                </div>
+                                <div class="dets">
+                                <div class="buttons">
+                                <div class="dough">
+                                <button class="doughtype" type="button">ПУХКЕ</button>
+                                <button class="doughtype" type="button">ТОНКЕ</button>
+                                </div>
+                                <div class="tocart">    
+                                </div>
+                                </div>
+                                <p class="doughp">тісто</p>
+                                </div>
+                            </div>
+                        </div>
+                    </th>
+                    <th>
+                        <div class="shop-items">
+                            <div class="shop-item">
+                                <img class="shop-item-image" src="https://smaki-maki.com/wp-content/uploads/sites/4/2020/05/z-shynkoyu-i-grybamy.jpg">
+                                <span class="shop-item-title">Шинка гриби</span>
+                                <p class ="ingreds">Томатний соус, шинка, гриби, сир</p>
+                                <div class="shop-item-details">
+                                <span class="shop-item-price">190 грн</span>
+                                    <button class="btn btn-primary shop-item-button" type="button" id="buttocart">В КОРЗИНУ</button>
+                                    <p class="weight">450 гр</p>
+                                </div>
+                                <div class="dets">
+                                <div class="buttons">
+                                <div class="dough">
+                                <button class="doughtype" type="button">ПУХКЕ</button>
+                                <button class="doughtype" type="button">ТОНКЕ</button>
+                                </div>
+                                <div class="tocart">    
+                                </div>
+                                </div>
+                                <p class="doughp">тісто</p>
+                                </div>
+                            </div>
+                        </div>
+                    </th>
+                    <th>
+                        <div class="shop-items">
+                            <div class="shop-item">
+                                <img class="shop-item-image" src="https://smaki-maki.com/wp-content/uploads/sites/4/2021/09/peperoni.jpg">
+                                <span class="shop-item-title">Пепероні</span>
+                                <p class ="ingreds">Соус томатний, моцарела, пепероні</p>
+                                <div class="shop-item-details">
+                                <span class="shop-item-price">210 грн</span>
+                                    <button class="btn btn-primary shop-item-button" type="button" id="buttocart">В КОРЗИНУ</button>
+                                    <p class="weight">440 гр</p>
+                                </div>
+                                <div class="dets">
+                                <div class="buttons">
+                                <div class="dough">
+                                <button class="doughtype" type="button">ПУХКЕ</button>
+                                <button class="doughtype" type="button">ТОНКЕ</button>
+                                </div>
+                                <div class="tocart">    
+                                </div>
+                                </div>
+                                <p class="doughp">тісто</p>
+                                </div>
+                            </div>
+                        </div>
+                    </th>
+                </tr>
+            </table>
+
+            
+        </section>
+        </div>
+        </div>
+        <footer class="footer">
+            <div class="container">
+                <div class="row">
+                    <div class="footer-col">
+                        <h4>Company</h4>
+                        <ul class="footer-ul">
+                            <li><a href="#">about us</a></li>
+                            <li><a href="#">our company</a></li>
+                            <li><a href="#">privacy policy</a></li>
+                            <li><a href="#">affiliate programm</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-col">
+                        <h4>Get help</h4>
+                        <ul class="footer-ul">
+                            <li><a href="#">FAQ</a></li>
+                            <li><a href="#">shipping</a></li>
+                            <li><a href="#">returns</a></li>
+                            <li><a href="#">order status</a></li>
+                            <li><a href="#">payment options</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-col">
+                        <h4>Follow us</h4>
+                        <div class="social-links">
+                            <a href="#"><i class="fab fa-facebook-f"></i></a>
+                            <a href="#"><i class="fab fa-instagram"></i></a>
+                            <a href="#"><i class="fab fa-twitter"></i></a>
+                            <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </footer>
+    </body>
+</html>
